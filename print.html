@@ -1,0 +1,22 @@
+<html lang="de">
+<head>
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/printpage.css">
+	<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Du bist Stefan Quandt</title>
+</head>
+<body>
+<div id='controls'>
+	<button onclick="printing.add_page()">Seite Hinzuf&uuml;gen</button>
+	<button onclick="window.print()">Drucken</button>
+</div>
+<script type="module">
+		import printing from './scripts/print.js'
+		window.printing = printing;
+		printing.add_page();
+</script>
+
+</body>
+
+</html>

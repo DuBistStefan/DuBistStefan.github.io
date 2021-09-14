@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<link rel="stylesheet" href="css/main.css">
+	<META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<title>Du bist Stefan Quandt</title>
+</head>
+<body>
+
+<div id='thegame' role="main">
+    <h1 id='heading'>Du bist Stefan Quandt</h1>
+    <div id='money_container'>
+    	Verm&ouml;gen: <span id='money'></span>
+    </div>
+    <div id='story'>
+    </div>
+    <script type="module">
+		import {game, ui} from './scripts/main.js'
+		window.game = game;
+		window.ui = ui;
+
+		/*const heading = document.getElementById('heading');
+		if(heading.scrollWidth > heading.clientWidth)
+        	heading.style.fontSize = "1.8em";*/
+	</script>
+</div>
+
+<footer id="foot">
+	<div id="menu">
+		<button id="btn_newgame" data-id="ui.new_game">Neues Spiel</button>
+		<button id="btn_animations" data-id="ui.toggle_animations">Animationen deaktivieren</button>
+		<button id="btn_delete" data-id="ui.delete_data">Gespeicherte Daten l&ouml;schen</button>
+		<div id="credits"></div>
+	</div>
+	<button aria-label="Einstellungen" id="menu_button" data-id="ui.menu" onclick="this.blur();">&#x2630;</button>
+</footer>
+</body>
+
+</html>

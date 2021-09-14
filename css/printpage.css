@@ -1,0 +1,112 @@
+@media print {
+    @page {
+        margin: 1cm;
+        size: A4 landscape;
+    }
+
+    body {
+        margin: 0px;
+        display: block;
+    }
+
+    #controls {
+        display: none !important;
+    }
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+.page {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    break-after: page;
+    grid-gap: 2cm;
+    margin: 0cm;
+    height: 18.9cm;
+}
+
+@media screen {
+    .page {
+        margin: 1cm;
+    }
+    body {
+        max-width: 1300px;
+        margin: auto;
+    }
+}
+
+.card {
+    text-align: justify;
+    padding: 0.5cm;
+    border: 0.05cm solid black;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.qrcode {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.qrcode > img {
+    width: 2cm;
+    height: 2cm;
+    margin: 0.3cm;
+}
+
+h3 {
+    display: inline;
+    vertical-align: middle;
+}
+
+h1 {
+    margin-bottom: 0.1em;
+}
+
+h4 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.quote::before {
+    content: "\201E";
+}
+
+.quote::after {
+    content: "\201C\A";
+    white-space: pre-line;
+}
+
+.cite::before {
+    content: "\2013";
+}
+
+.quote {
+    display: block;
+    text-align: left;
+}
+
+.cite {
+    display: block;
+    text-align: right;
+    font-style: italic;
+}
+
+.url-info {
+    text-align: center;
+}
+
+.cardfooter {
+    margin-top: auto;
+}
+
+#controls {
+    display: flex;
+    flex-direction:column;
+    margin: 1cm;
+    margin-bottom: 0;
+}

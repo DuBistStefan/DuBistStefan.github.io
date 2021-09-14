@@ -1,0 +1,263 @@
+@import 'fonts.css'; html {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 98vh;
+}
+
+h1 {
+    font-family: 'Noto Serif';
+    font-style: italic;
+    /* font-weight: 700; */
+    text-align: center;
+    white-space: nowrap;
+}
+
+@media only screen and (max-width: 450px) {
+    h1 {
+        font-size: 1.8em !important;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    h1 {
+        font-size: 1.5em !important;
+    }
+}
+
+footer {
+    margin: 10px;
+    text-align: center;
+}
+
+img {
+    width: 100%;
+}
+
+#thegame {
+    max-width: 700px;
+    margin: auto;
+    flex: 1;
+}
+
+#story {
+    font-family: 'Noto Serif';
+    font-size: larger;
+    text-align: justify;
+    hyphens: auto;
+    width: 100%;
+}
+
+#money_container {
+    font-family: 'Noto Serif';
+    font-size: larger;
+    text-align: center;
+    opacity: 0;
+}
+
+button {
+    border: 1px solid black;
+    background-color: white;
+    font-family: 'Noto Serif';
+    font-size: large;
+    margin: 4px 0px 4px 0px;
+    padding: 20px;
+    width: 100%;
+}
+
+button:focus {
+    outline: 1px solid black;
+}
+
+button:hover:enabled {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+button:disabled {
+    color: inherit;
+}
+
+button.disabled {
+    text-decoration: line-through;
+    color: grey;
+    border: 1px solid grey;
+}
+
+button:active {
+    background-color: black;
+}
+
+button.visited {
+    background-color: lightgreen;
+    border : none;
+}
+
+.money {
+    white-space: nowrap;
+}
+
+.text_anim {
+    opacity: 0;
+}
+
+.strike {
+    text-decoration: line-through;
+}
+
+#menu_button {
+    font-size: xx-large;
+    border: none;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    padding: 0px;
+}
+
+#menu {
+    display: none;
+    font-family: 'Noto Serif';
+    font-size: large;
+    margin: 15px auto 15px auto;
+    max-width: 500px;
+    border: 1px solid black;
+    padding: 20px;
+    padding-bottom: 10px;
+}
+
+#menu.open {
+    display: block;
+}
+
+.inline-block {
+    display:inline-block;
+}
+
+.bild {
+    font-family : "Montserrat";
+    /* font-size : 1.3125rem; */
+    font-size: medium;
+    line-height: 2rem;
+}
+
+p.bild{
+    margin: 5px 0 5px 0;
+}
+
+p.bild a, p.welt a {
+    color: inherit;
+    border-bottom: 1px solid currentColor;
+    text-decoration: none;
+}
+
+.bild .credit {
+    font-weight:300;
+    color:grey;
+}
+
+.bild.p0::before{
+    display: block;
+}
+
+.bild.p0 {
+    font-weight: 900;
+    color: #dc0000;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 15px 0px 6px 0px;
+    line-height: unset;
+    font-size: 1.5rem;
+}
+
+.bild.p1 {
+    font-weight: 900;
+    font-size: 4rem;
+    text-align: center;
+    margin: 12px auto 12px auto;
+    line-height: unset;
+}
+
+.bild.p2 {
+    line-height: unset;
+}
+
+@media only screen and (max-width: 450px) {
+    .bild.p1 {
+        font-size: 2rem;
+    }
+
+    .bild.p0 {
+        font-size: 1.15rem;
+    }
+}
+
+.welt {
+    font-size: medium;
+    line-height: 2rem;
+    font-family: 'Sura';
+}
+
+.welt.p0, .welt.p1, .welt.p2, .welt.p3, .welt.p4, .welt.p5 {
+    font-family: 'Montserrat';
+}
+
+.welt.p0 {
+    text-transform: uppercase;
+    font-size: small;
+    color: #003B5B;
+}
+
+.welt .ressort {
+    border-bottom: 1px solid orange;
+    margin-right: 15px;
+    font-weight: 600;
+}
+
+.welt.p1 {
+    font-size: x-large;
+    font-weight: 600;
+    margin: 15px 0px 15px 0px;
+}
+
+.welt.p2, .welt.p3 {
+    font-size: small;
+    margin-top: 0px;
+}
+
+.welt.p4 {
+    background-color: #eeeee9;
+    font-size: small;
+    padding-bottom: 7px;
+}
+
+.welt .caption {
+    padding-left: 15px
+}
+
+.welt .credit {
+    font-size: x-small;
+    padding-left: 15px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.welt.p6::first-letter {
+    display: block;
+    font-family: 'Montserrat';
+    font-weight: 200;
+    float: left;
+    font-size: 6.5rem;
+    line-height: 5rem;
+    margin-top: 8px;
+    margin-right:10px;
+}
+
